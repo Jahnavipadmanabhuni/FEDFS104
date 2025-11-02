@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      body {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 20px;
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        gap: 20px;
+      }
+      .card {
+        background: rgb(173, 240, 237);
+        padding: 20px;
+        border-radius: 80px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex: 1 1 250px;
+        max-width: 300px;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .card {
+        flex-basis: 31%;
+        background-color: #daea73;
+        border-radius: 20px;
+        margin-bottom: 5%;
+        padding: 20px 12px;
+        box-sizing: border-box;
+        transition: 0.5s;
+      }
+      .card:hover {
+        box-shadow: 0 0 50px 0px rgba(226, 6, 6, 0.2);
+      }
+      .card h3 {
+        flex-grow: 1;
+      }
+      .card button {
+        background-color: #3498db;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Responsive Flexbox card</h2>
+    <div class="flex-container">
+      <div class="card">
+        <h3>Card 1</h3>
+        <p>This is a simple card with some content inside.</p>
+        <button>Learn more</button>
+      </div>
+      <div class="card">
+        <h3>Card 1</h3>
+        <p>This is a simple card with some content inside.</p>
+        <button>Learn more</button>
+      </div>
+      <div class="card">
+        <h3>Card 1</h3>
+        <p>This is a simple card with some content inside.</p>
+        <button>Learn more</button>
+      </div>
+    </div>
+  </body>
+</html>
